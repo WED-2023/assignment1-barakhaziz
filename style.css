@@ -1,7 +1,129 @@
-#menu
-{
+/* איפוס והגדרות בסיסיות */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body, html {
+	height: 100%;
+	font-family: Arial, sans-serif;
+	scroll-behavior: smooth;
+	background: #f4f4f9;
+	color: #333;
+  }
+  
+  /* עיצוב התפריט העליון */
+  #menu {
+	list-style-type: none;
 	position: fixed;
 	width: 100%;
-	height: 35px;
-	background: white;
+	background-color: #add8e6;
+	padding: 10px 0;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	z-index: 1000;
+  }
+  
+  #menu li {
+	display: inline;
+	padding: 0 20px;
+  }
+  
+  #menu a {
+	text-decoration: none;
+	color: #333;
+	font-size: 18px;
+  }
+  
+  /* עיצוב המדורים */
+/* עיצוב רקע וטקסט לכל מדור */
+.section {
+	background: #ffffff; /* רקע לבן */
+	color: #333; /* צבע טקסט כהה */
+	padding: 40px 20px; /* רווחים */
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* צל עדין */
+	margin-bottom: 20px; /* מרווח בין מדורים */
+  }
+  
+  #about {
+	background-color: #f4f4f9; /* צבע רקע עדין */
+	color: #333; /* צבע טקסט כהה */
+	padding: 50px 20px; /* ריווחים פנימיים */
+	text-align: center; /* ממרכז את הטקסט */
+  }
+
+  #about p {
+	font-size: 18px; /* גודל פונט של הפסקה */
+	line-height: 1.6; /* רווח בין שורות */
+	margin-bottom: 20px; /* מרווח למטה מהפסקה */
+  }
+  
+  #about img {
+	border-radius: 50%; /* עיגול קצוות התמונה */
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* צל עדין מתחת לתמונה */
+	margin-top: 20px; /* מרווח למעלה מהתמונה */
+  }
+
+  #photos {
+	background: #eef2f7;
+	padding: 20px;
+  }
+  .photo-gallery {
+	display: flex;
+	overflow-x: auto;
+	gap: 50px; /* מרחק בין התמונות */
+	padding: 50px 0;
+  }
+  .photo-gallery img {
+	min-width: 300px; /* גודל תמונה רגיל */
+	height: auto;
+	margin-right: 10px;
+	transition: transform 0.3s ease-in-out;
+	cursor: pointer;
+  }
+  .photo-gallery img:hover {
+	transform: scale(1.5); /* הגדלה בעת העברת עכבר */
+  }
+#playlist {
+  background-color: #fff; /* רקע לבן */
+  color: #333; /* צבע טקסט כהה */
+  padding: 40px 20px; /* רווחים פנימיים */
+  text-align: center; /* ממרכז את הטקסט */
 }
+#playlist p {
+	font-size: 18px; /* גודל פונט של הפסקה */
+	margin-bottom: 20px; /* מרווח למטה מהפסקה */
+  }
+  
+  .video-wrapper {
+	max-width: 560px; /* רוחב מקסימלי */
+	margin: auto; /* מרכז את הווידאו */
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* צל עדין מתחת לווידאו */
+  }
+  
+  #like {
+	background: #eef2f7;
+  }
+  
+  #qrcoder {
+	background: #fff;
+  }
+  
+  #spa {
+	background: #eef2f7;
+  }
+  
+  #contact {
+	background: #fff;
+  }
+  .title {
+	font-size: 36px; /* גודל הפונט */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* סוג הפונט */
+	background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); /* רקע גרדיאנט */
+	-webkit-background-clip: text; /* גורם לגרדיאנט להיות רק על הטקסט */
+	color: transparent; /* שקוף כדי שהגרדיאנט יופיע */
+	text-align: center;
+	margin-bottom: 30px; /* ריווח למטה */
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* צל עדין מתחת לטקסט */
+  }
