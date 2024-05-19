@@ -109,14 +109,68 @@
   #qrcoder {
 	background: #fff;
   }
-  
-  #spa {
-	background: #eef2f7;
-  }
-  
-  #contact {
-	background: #fff;
-  }
+
+#spa {
+	direction: rtl; /* מגדיר כיוון כללי של הדף מימין לשמאל */
+	background-color: #f4f4f4; /* רקע אפור בהיר להבחנה טובה יותר */
+	padding: 20px; /* ריווח בפנים */
+	border-radius: 8px; /* קצוות מעוגלים */
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* צל עדין */
+	margin: 20px auto; /* מרכז ומרווח מסביב */
+	width: 80%; /* רוחב הסקשיין */
+	direction: rtl; /* כיווניות מימין לשמאל */
+	font-family: 'Arial', sans-serif; /* גופן */
+}
+	#spa h2, #spa h3, #spa h4 {
+		color: #333; /* צבע כהה יותר לכותרות */
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+	#spa p, #spa ul {
+		text-align: right; /* יישור טקסט לימין */
+		line-height: 1.6; /* רווח בין שורות */
+		color: #666; /* צבע טקסט אפור */
+		font-size: 16px; /* גודל גופן */
+	}
+	#spa ul {
+		padding-right: 20px; /* ריווח בפנים של הרשימה */
+	}
+	#spa li {
+		margin-bottom: 10px; /* מרווח בין פריטי רשימה */
+	}
+
+#contact {
+	background-color: #f9f9f9;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	text-align: center;
+	font-family: 'Arial', sans-serif;
+	color: #333;
+	margin: 20px auto;
+	width: 90%;
+	max-width: 600px;
+}
+
+	#contact label, #contact input[type="email"], #contact textarea, #contact select {
+		font-size: 16px;
+		margin-bottom: 10px;
+		display: block;
+		width: 90%; /* אורך הקלטים והטקסטאריה */
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#contact input[type="submit"] {
+		font-size: 18px;
+		padding: 10px 20px;
+		background-color: #4CAF50;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
   .title {
 	font-size: 36px; /* גודל הפונט */
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* סוג הפונט */
